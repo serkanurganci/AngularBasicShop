@@ -1,0 +1,20 @@
+<main class="form-signin text-center">
+  <form #loginForm="ngForm" (ngSubmit)="login(loginForm)" class="form-signin">
+    <div class="text-center mb-4">
+      <h1 class="h3 mb-3 fw-normal">Sisteme giris</h1>
+    </div>
+    <div class="form-label-group">
+      <label for="inputEmail" class="visually-hidden" for="floatingInput">Kullanici Adi</label>
+      <input type="text" #userName="ngModel" [(ngModel)]="model.userName" id="userName" name="userName"
+        class="form-control" placeholder="Kullanici Adi" required autofocus>
+    </div>
+
+    <div class="form-label-group">
+      <label for="inputPassword" class="visually-hidden">Password</label>
+      <input type="password" #password="ngModel" [(ngModel)]="model.password" name="password" id="password"
+        class="form-control" placeholder="Sifre" required>
+    </div>
+    <button class="w-100 btn btn-lg btn-primary" type="submit">Giris</button>
+    <p class="mt-5 mb-3 text-muted">&copy; 2020-2021</p>
+  </form>
+</main>

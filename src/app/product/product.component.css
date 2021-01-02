@@ -1,0 +1,31 @@
+.productbox{
+    padding: 15px;
+}
+img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.productbox{
+    max-width: 200px;
+    max-height: 450px;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.1);
+    position: relative;
+    margin-top: 1rem;
+    border-radius: 10px;
+}
+
+.productbox .card-title{
+    font-size: 1rem;
+    font-weight: 400;
+    width:70%;
+    overflow:hidden ;
+}
+
+.productbox .btn-primary{
+    margin: 0 auto;
+    position: absolute;
+    bottom:10px;
+    right: 20%;
+}
